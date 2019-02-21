@@ -1,6 +1,11 @@
 /*
 
-What is a linked-list
+ What is a linked-list ?
+ Linked List is Dynamic data Structure.
+ Linked List can grow and shrink during run time.
+ Insertion and Deletion Operations are Easier.
+ Efficient Memory Utilization ,i.e no need to pre-allocate memory
+
 {
 	value: 7
 	next: nextNode,

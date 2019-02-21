@@ -1,12 +1,14 @@
 /*
-Constant
-Linear
-Exponential
-Logarithmic
+	Constant Runtime
+	Linear Runtime
+	Exponential Runtime
+	Logarithmic Runtime
  */
 
 
 // Constant runtime - Big O Notation:  "O (1)"
+// as the input increases the
+
 function log(array){
 	console.log(array[ 0 ]);
 	console.log(array[ 1 ]);
@@ -17,6 +19,8 @@ log([ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]);
 
 
 // Linear runtime - Big O Notation:  "O (n)"
+// As the input increases our runtime will increase
+// If input contains 6 elements we will have to perform 6 operations
 function logAll(array){
 	for (var i = 0; i < array.length; i++) {
 		console.log(array[ i ]);
@@ -29,6 +33,7 @@ logAll([ 1, 2, 3, 4, 5, 6, 7 ]);
 
 
 // Exponential runtime - Big O Notation: "O (n^2)"
+// if array = 3 elements, 9 operations will be performed
 function addAndLog(array){
 	for (var i = 0; i < array.length; i++) {
 		for (var j = 0; j < array.length; j++) {
@@ -43,6 +48,8 @@ addAndLog([ 'A', 'B', 'C', 'D', 'E' ]);  // 25 pairs logged out
 
 
 // Logarithmic runtime - Big O Notation: O (log n)
+// in binary search will have two input. List, value to search for in the List
+// Binary search is an example of logarithmic runtime
 function binarySearch(array, key){
 	var low = 0;
 	var high = array.length - 1;

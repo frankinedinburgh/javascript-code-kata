@@ -39,3 +39,10 @@
 
 #### Data Structures in Javascript
 
+
+
+
+## To Do
+- <del>pay the valuator</del>
+- continue course for data structures ( binary search and has tables ) 
+- chase up about work at Workday 
