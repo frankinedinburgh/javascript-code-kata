@@ -1,5 +1,5 @@
--  check if all characters in a string are unique
--  flatten an array
+- Check if all characters in a string are unique
+- Flatten an array
 
 
 - Unique characters
@@ -11,4 +11,30 @@
 
 
 
+
+
+#### Learning Algorithms from Scratch
+
+- Fizz Buzz
+- Harmless Ransom Note
+- Is Palindrome
+- Caesar Cipher
+- Reverse Words
+- Reverse Array in Place
+- Mean Median Mode
+- Two Sum
+- Binary Search
+- Fibonacci
+- Memoized Fibonacci
+- Sieve of Eratosthenes
+- Bubble Sort
+- Merge Sort
+- Max Stock Profit
+
+
+
+30/01/2019 - Two sum algorithm
+
+
+#### Data Structures in Javascript
 
