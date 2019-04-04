@@ -9,3 +9,4 @@
 - Find the Highest Frequency
 - String Rotation
 
+What are the strengths and weaknesses of such & such a data structure
