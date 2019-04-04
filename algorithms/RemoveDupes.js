@@ -1,9 +1,9 @@
-console.log(
-	removeDupesEx1('bacdefghijjjjj'),
-	removeDupesEx2('bacdefghijjjjj')
-)
-
-console.time('Example One')
+/**
+ * Remove duplicated characters from a string
+ * @param {String} str 
+ * @example removeDupesEx1('bacdefghijjjjj')
+ * @returns {String}
+ */
 function removeDupesEx1(str) {
 	str = new Set(str);
 	let result = '';
@@ -13,12 +13,9 @@ function removeDupesEx1(str) {
 	}
 	return result;
 }
-console.timeEnd('Example One')
 
-console.time('Example Two')
 function removeDupesEx2(str){
 	str = new Set(str);
 	return Array.from(str).join('');
 }
 
-console.timeEnd('Example Two')

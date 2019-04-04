@@ -1,25 +1,18 @@
-/*
-
-Highest Frequency
-
-Instructions:
-Write a function that takes an array of strings
-and returns the most commonly occurring string
-in that array.
-
-If there are multiple strings with the same high
-frequency, return the one that appears first in the array
-
-Input: Array of Strings
-Output: String
-
-*/
-
-
-// Examples:
-console.log(
-	highestFrequency(['a','b','c','d','e', 'e', 'ghi', 'ghi', 'ghi', 'a','a','a'])
-)
+/**
+ * @summary Highest Frequency
+ *
+ * @description Instructions:
+ * Write a function that takes an array of strings.
+ * and returns the most commonly occurring string
+ * in that array.
+ * 
+ * If there are multiple strings with the same high
+ * frequency, return the one that appears first in the array
+ * 
+ * @param {Array} strings 
+ * @returns {String}
+ * @example highestFrequency(['a','b','c','d','e', 'e', 'ghi', 'ghi', 'ghi', 'a','a','a'])
+ */
 
 function highestFrequency(strings){
 	const frequencies = {};

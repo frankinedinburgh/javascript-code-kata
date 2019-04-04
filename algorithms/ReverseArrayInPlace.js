@@ -1,8 +1,10 @@
-/*
- Reverse an array using the array passing in as a parameter
- Do NOT push to a new array
-*/
-
+/**
+ * @summary Reverse an array using the array passing in as a parameter. 
+ * Do NOT push to a new array
+ * @param {Array} arr 
+ * @return {Array}
+ * @example reverseArrayInPlaceB([ 'frank', 'is', 'so', 'cool' ])
+ */
 function reverseArrayInPlaceA(arr) {
 	for(let i=arr.length-1; i>=0; i--) {
 		arr.push(arr[i])

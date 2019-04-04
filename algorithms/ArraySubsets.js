@@ -46,8 +46,14 @@ such as when an item is present twice.
 //}
 
 
-arraySubset([ 2, 1, 3 ], [ 1, 2, 3 ])
 
+/**
+ * 
+ * @param {array} superset 
+ * @param {array} subset 
+ * @example arraySubset([ 2, 1, 3 ], [ 1, 2, 3 ])
+ * @returns {boolean} true|false
+ */
 function arraySubset(superset, subset){
 
 	for(let i = superset.length; i >= 0; i--) {

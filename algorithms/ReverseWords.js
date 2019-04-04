@@ -1,7 +1,7 @@
-/*
-Every word in the string should be reversed BUT the string as a whole should not be reversed
-*/
-
+/**
+ * Every word in the string should be reversed BUT the string as a whole should not be reversed
+ * @param {string} string 
+ */
 function reverseWordsA(string) {
 	// reverse every word in the string
 	// return the new string

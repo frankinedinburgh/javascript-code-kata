@@ -1,3 +1,11 @@
+/**
+ * @description The action of a Caesar cipher is to replace each plain text letter with a different one a fixed number of places down the alphabet.
+ * @function caesarCipher
+ * @param {string} str 
+ * @param {number} num 
+ * @returns {string}
+ * @example caesarCipher('zoo &ee=per', 4)
+ */
 function caesarCipher(str, num) {
 	num = num % 26;
 	let lowerCaseString = str.toLowerCase();

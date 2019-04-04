@@ -1,24 +1,17 @@
-/*
+/**
+ * @summary Flatten Array
+ * @description 
+ * ###### Instrutions: 
+ * - Write a function that will take an array of deeply
+ * - nested arrays and extract every item, flattening the array.
+ * - It should return a new array that contains the items of each internal array, preserving order.
+ * 
+ * @param {Array} Array 
+ * @returns {Array} Array
+ * @example flattenArray(['abc', ['def', ['ghi', 'jkl', 'mno', 'p']]])
+ */
 
-Flatten Array
-
-Instructions:
-Write a function that will take an array of deeply
-nested arrays and extract every item, flattening
-the array. It should return a new array that contains the items of each internal array,
-preserving order.
-
-Input: Array
-Output: Array
-
-Examples:
-
-flatten(['abc', ['def', ['ghi', 'jkl', 'mno', 'p']]])
-
-*/
-
-function flatten(array) {
-
+function flattenArray(array) {
 	let answer = [];
 
 	for (let i = 0; i < array.length; i++) {
@@ -37,13 +30,13 @@ function flatten(array) {
 }
 
 
-console.log(
-	flatten([ 'abc', [ 'def', [ 'ghi', 'jkl', 'mno', [[[[ 'p']]]] ] ] ])
-)
-
-
-
-function flatten2(str) {
+/**
+ * @summary Verison 2 of Flatten Array Algorithm
+ * @param {string} 
+ * @returns {string} 
+ * @example flatten2('abcfdgabdcd')
+ */
+function flattenArray2(str) {
     let uniqueChars = [];
 
     for(let i=0; i<str.length; i++) {
@@ -58,8 +51,5 @@ function flatten2(str) {
     return uniqueChars
 }
 
-console.log('Flatten 2');
-console.log(
-    flatten2('abcfdgabdcd')
-)
+
 

@@ -1,3 +1,10 @@
+/**
+ * @constructor
+ * @param {string} firstName 
+ * @param {string} lastName 
+ * @param {number} age 
+ * @param {string} gender 
+ */
 function User(firstName, lastName, age, gender) {
 	this.firstName = firstName;
 	this.lastName = lastName;
@@ -5,7 +12,17 @@ function User(firstName, lastName, age, gender) {
 	this.gender = gender;
 }
 
+/**
+ * @memberof User
+ * @property emailDomain
+ */
 User.prototype.emailDomain = '@facebook.com';
+
+/**
+ * @memberof User
+ * @property getEmailAddress
+ * @returns {string} - somename@facebook.com
+ */
 User.prototype.getEmailAddress = function(){
 	return this.firstName.toLowerCase() + this.lastName.toLowerCase() + this.emailDomain;
 };
@@ -13,7 +30,14 @@ User.prototype.getEmailAddress = function(){
 const username = new User('Frank', 'H', 36, 'male');
 
 
-
+/**
+ * @constructor
+ * @property {date} date 
+ * @property {string} day 
+ * @property {string} session 
+ * @property {string} details 
+ * @property {string} notes 
+ */
 function Session(date, day, session, details, notes){
 	this.date = date;
 	this.day = day;

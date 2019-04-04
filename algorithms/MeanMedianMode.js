@@ -1,19 +1,4 @@
-/*
-
-Mean Median Mode
-
-Mean = Average
-
-input: takes in a number array as a parameter
-output: {
-	mean: 'the_mean_val',
-	median: 'the_median_val',
-	mode: 'the_mode_val(s)',
-}
-
-*/
-
-function getMean(array){
+function getMean(numberArray){
 	let sum = 0;
 	array.forEach(num => {
 		sum += num;
@@ -21,7 +6,6 @@ function getMean(array){
 
 	return sum / array.length;
 }
-
 
 function getMedian(array) {
 	array.sort(function (a, b){ return a - b; });
@@ -75,7 +59,19 @@ function getMode(array) {
 
 }
 
-
+/**
+ * @summary Mean Median Mode. 
+ * @param {Array} numberArray 
+ * @returns {Object} Mean Median and Mode
+ * ```js
+ * output: {
+ *		mean: 'the_mean_val',
+ *		median: 'the_median_val',
+ *		mode: 'the_mode_val(s)',
+ * }
+ * ```
+ * @example meanMedianMode([ 9,10,23,10,23,9 ])
+ */
 function meanMedianMode(array) {
 	// call other 3 functions
 	// return obj which has mean, median , mode on it
@@ -87,7 +83,7 @@ function meanMedianMode(array) {
 }
 
 
-console.log(meanMedianMode([ 9,10,23,10,23,9 ]));
+
 
 
 

@@ -1,15 +1,10 @@
-/*
-Two Sum
-
-inputs: number array and number
-outputs: array of arrays
-
-
-*/
-
-// example TwoSum([1, 6, 4, 5, 3, 3], 7)
-
-
+/**
+ * @description Two Sum
+ * @param {array} numArray number array
+ * @param {number} sum 
+ * @returns {array} array of arrays
+ * @example twoSum([ 40, 11, 19, 17, -12 ], 28)
+ */
 function twoSum(numArray, sum) {
 
 	let pairs = [];
@@ -28,8 +23,3 @@ function twoSum(numArray, sum) {
 
 	return pairs;
 }
-
-
-console.log(
-	twoSum([ 40, 11, 19, 17, -12 ], 28)
-)
