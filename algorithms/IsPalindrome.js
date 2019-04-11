@@ -1,12 +1,16 @@
+/** @namespace */
+let isPalindrome = {};
+
 /**
  * Is given string a Palindrome ?
+ * @memberof isPalindrome
  * @category Algorithms
  * @param {string} str
  * @returns {boolean} true | false
- * @example isPalinrome("racecar") 
+ * @example versionA("racecar") 
  */
 
- function isPalindrome(str) {
+ const versionA = function(str) {
      let s = str.toLowerCase()
      let chars = s.split('')
      let validChars = 'abcdefghijklmnopqrstuvwxyz'.split('')
@@ -24,3 +28,5 @@
 
      return false
  }
+
+ isPalindrome.versionA = versionA;
