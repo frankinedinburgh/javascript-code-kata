@@ -1,4 +1,8 @@
+/** @namespace */
+let flattenArray = {};
+
 /**
+ * @memberof flattenArray
  * @summary Flatten Array
  * @description 
  * ###### Instrutions: 
@@ -8,10 +12,10 @@
  * 
  * @param {Array} Array 
  * @returns {Array} Array
- * @example flattenArray(['abc', ['def', ['ghi', 'jkl', 'mno', 'p']]])
+ * @example versionA(['abc', ['def', ['ghi', 'jkl', 'mno', 'p']]])
  */
 
-function flattenArray(array) {
+const versionA = function(array) {
 	let answer = [];
 
 	for (let i = 0; i < array.length; i++) {
@@ -31,12 +35,13 @@ function flattenArray(array) {
 
 
 /**
+ * @memberof flattenArray
  * @summary Verison 2 of Flatten Array Algorithm
  * @param {string} 
  * @returns {string} 
- * @example flatten2('abcfdgabdcd')
+ * @example versionB('abcfdgabdcd')
  */
-function flattenArray2(str) {
+const versionB = function(str) {
     let uniqueChars = [];
 
     for(let i=0; i<str.length; i++) {
@@ -51,5 +56,6 @@ function flattenArray2(str) {
     return uniqueChars
 }
 
-
+flattenArray.versionA = versionA;
+flattenArray.versionB = versionB;
 

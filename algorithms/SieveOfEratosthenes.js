@@ -5,14 +5,21 @@
  * Mark all as prime to begin with
  * Every number that is not prime will be marked as false
  *
- * @param {Number}
+ * @param {Number} num
  * @example sieveOfEratosthenes(5)
  * @returns {Array}
  */
 
-
  function sieveOfEratosthenes(num) {
-    return
+    let count = 0;
+    let primes = [];
+    for(let i=0; i<=num; i++) {
+      if((count < 2) | (count % 2 === 0)) {
+         primes[i] = false   
+      } else {
+         primes[i] = count
+      }
+      count += 1
+    }
+    return primes.filter(Boolean)
  }
-
- console.log(sieveOfEratosthenes(21))

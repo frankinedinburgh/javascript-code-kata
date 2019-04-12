@@ -9,5 +9,13 @@ def HarmlessRansomNote(noteTxt, magazineTxt):
             magaObj[word] = 0
         else:
             magaObj[word]++
+
+    for el in noteArray:
+        if magaObj[el]:
+            magaObj[el]--
+            if magaObj[el] < 0:
+                possible = false
+        else:
+            noteArray[el]++
     pass
     

@@ -1,10 +1,13 @@
+/** @namespace removeDupes */
+let removeDupes = {}
+
 /**
  * Remove duplicated characters from a string
  * @param {String} str 
- * @example removeDupesEx1('bacdefghijjjjj')
+ * @example v1('bacdefghijjjjj')
  * @returns {String}
  */
-function removeDupesEx1(str) {
+const v1 = function(str) {
 	str = new Set(str);
 	let result = '';
 
@@ -14,8 +17,18 @@ function removeDupesEx1(str) {
 	return result;
 }
 
-function removeDupesEx2(str){
+
+/**
+ * Remove duplicated characters from a string
+ * @param {String} str 
+ * @example v2('bacdefghijjjjj')
+ * @returns {String}
+ */
+const v2 = function(str){
 	str = new Set(str);
 	return Array.from(str).join('');
 }
 
+
+removeDupes.v1 = v1;
+removeDupes.v2 = v2;

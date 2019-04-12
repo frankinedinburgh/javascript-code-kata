@@ -1,10 +1,14 @@
+/** @namespace */
+let isUnique = {};
+
 /**
  * Is Unique
+ * @memberof isUnique
  * @param {String} str 
  * @returns {Boolean}
- * @example isUnique('JanFebMArchAprilMay')
+ * @example isUnique.versionA('JanFebMArchAprilMay')
  */
-function isUnique(str) { // 0(n)
+const versionA = function(str) { // 0(n)
 	for(let i=0; i<str.length; i++) { // 0(n)
 		if(str.lastIndexOf(str[ i ]) !== i) {
 			return false
@@ -13,8 +17,14 @@ function isUnique(str) { // 0(n)
 	return true;
 }
 
-
-function isUnique2(str){ // 0(n)
+/**
+ * Is Unique 2
+ * @memberof isUnique
+ * @param {String} str 
+ * @returns {Boolean}
+ * @example isUnique.versionB('JanFebMArchAprilMay')
+ */
+const versionB = function(str){ // 0(n)
 	const chars = str.split("").sort()
 
 	for (let i=1; i<=chars.length; i++) {
@@ -25,7 +35,14 @@ function isUnique2(str){ // 0(n)
 	return true;
 }
 
-function isUnique3(str){ // 0(n)
+/**
+ * Is Unique 3
+ * @memberof isUnique
+ * @param {String} str 
+ * @returns {Boolean}
+ * @example isUnique.versionC('JanFebMArchAprilMay')
+ */
+const versionC = function(str){ // 0(n)
 	const chars = new Set();
 
 	for(let i=0; i<str.length; i++) {
@@ -41,7 +58,19 @@ function isUnique3(str){ // 0(n)
 	return true;
 }
 
-function isUnique4(str){ // 0(n)
+/**
+ * Is Unique 4
+ * @memberof isUnique
+ * @param {String} str 
+ * @returns {Boolean}
+ * @example isUnique.versionD('JanFebMArchAprilMay')
+ */
+const versionD = function(str){
 	return new Set(str).size === str.length;
 }
 
+
+isUnique.versionA = versionA;
+isUnique.versionB = versionB;
+isUnique.versionC = versionC;
+isUnique.versionD = versionD;
