@@ -1,3 +1,6 @@
+/** @namespace SortedSearch */
+let SortedSearch = {}
+
 /**
  * @summary Sorted Search
  * @descripion Instructions:
@@ -11,6 +14,8 @@
  * @returns {Number}
  */
 
-function search(numbers, target) {
+const v1 = function(numbers, target) {
 	return numbers.indexOf(target);
 }
+
+SortedSearch.v1 = v1;

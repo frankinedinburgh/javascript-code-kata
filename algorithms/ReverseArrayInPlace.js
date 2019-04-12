@@ -1,11 +1,14 @@
+/** @namespace reverseArrayInPlace */
+let reverseArrayInPlace = {}
 /**
  * @summary Reverse an array using the array passing in as a parameter. 
  * Do NOT push to a new array
+ * @memberof reverseArrayInPlace
  * @param {Array} arr 
  * @return {Array}
- * @example reverseArrayInPlaceB([ 'frank', 'is', 'so', 'cool' ])
+ * @example versionA([ 'frank', 'is', 'so', 'cool' ])
  */
-function reverseArrayInPlaceA(arr) {
+const versionA = function(arr) {
 	for(let i=arr.length-1; i>=0; i--) {
 		arr.push(arr[i])
 	}
@@ -13,7 +16,15 @@ function reverseArrayInPlaceA(arr) {
 	return arr.splice((arr.length / 2), arr.length)
 }
 
-function reverseArrayInPlaceB(arr){
+/**
+ * @summary Reverse an array using the array passing in as a parameter. 
+ * @memberof reverseArrayInPlace
+ * Do NOT push to a new array
+ * @param {Array} arr 
+ * @return {Array}
+ * @example versionB([ 'frank', 'is', 'so', 'cool' ])
+ */
+const versionB = function(arr){
 	for (let i = 0; i < arr.length / 2; i++) {
 		let tempVar = arr[ i ];
 		arr[ i ] = arr[ arr.length - 1 - i ];
@@ -23,14 +34,7 @@ function reverseArrayInPlaceB(arr){
 	return arr;
 }
 
-//console.time('A')
-//console.log(
-//	reverseArrayInPlaceA([ 'frank', 'is', 'so', 'cool' ]) // => ['cool', 'so', 'is', 'frank']
-//)
-//console.timeEnd('A')
 
-console.time('B')
-console.log(
-	reverseArrayInPlaceB([ 'frank', 'is', 'so', 'cool' ]) // => ['cool', 'so', 'is', 'frank']
-)
-console.timeEnd('B')
+
+reverseArrayInPlace.versionA = versionA;
+reverseArrayInPlace.versionB = versionB;
