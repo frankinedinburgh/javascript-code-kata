@@ -60,3 +60,6 @@ const versionB = function(numArray, sum) {
 
 twoSum.versionA = versionA;
 twoSum.versionB = versionB;
+
+
+module.exports = twoSum
