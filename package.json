@@ -1,0 +1,14 @@
+{
+  "name": "javascript-code-kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/frankinedinburgh/javascript-code-kata.git",
+  "author": "frank",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
